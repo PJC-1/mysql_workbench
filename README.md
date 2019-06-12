@@ -20,8 +20,16 @@ Notes
 >mysql  Ver 8.0.16 for macos10.14 on x86_64 (MySQL Community Server - GPL)
 >```
 >
+>**MySQL Service** (*on Mac*)
+>Run the following command to **start**/**stop** the *MySQL service*.
+>```
+>sudo /usr/local/mysql/support-files/mysql.server start
+>sudo /usr/local/mysql/support-files/mysql.server stop
+>```
+>
 
 Helpful Links
 -------------
 >[Official MySQL site](https://dev.mysql.com/)
 >[MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+>[Helpful Article on how to install and configure MySQL on ubuntu 18.04](https://vitux.com/how-to-install-and-configure-mysql-in-ubuntu-18-04-lts/)
