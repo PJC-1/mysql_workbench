@@ -27,9 +27,17 @@ Notes
 >sudo /usr/local/mysql/support-files/mysql.server stop
 >```
 >
+>**MySQL Service** (*on Ubuntu 18.04 LTS*)
+>`systemctl status mysql.service`
+>
+>**MySQL Workbench**
+>NOTE: *Remember to log out as the mysql user from the terminal before creating a MySQL Workbench connection*.
+>
+
 
 Helpful Links
 -------------
 >[Official MySQL site](https://dev.mysql.com/)
 >[MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 >[Helpful Article on how to install and configure MySQL on ubuntu 18.04](https://vitux.com/how-to-install-and-configure-mysql-in-ubuntu-18-04-lts/)
+>[Good reference for installing MySQL Workbench on ubuntu](https://ubuntu-mate.community/t/how-to-install-mysql-server-and-mysql-workbench-on-ubuntu-mate-18-04/17884)
