@@ -34,6 +34,18 @@ Notes
 >NOTE: *Remember to log out as the mysql user from the terminal before creating a MySQL Workbench connection*.
 >
 
+COMMANDS
+-------------
+>**Create a user**
+>*syntax*
+>`CREATE USER '<USER_NAME>'@'<HOST>' IDENTIFIED BY '<PASSWORD>'`
+>*example*
+>`CREATE USER 'joe1996'@'localhost' IDENTIFIED BY 'examplePa$$w0rd'`
+>
+>**Display user and host**
+>*syntax*
+>`SELECT user, host FROM mysql.user;`
+>
 
 Helpful Links
 -------------
