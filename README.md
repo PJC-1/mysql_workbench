@@ -46,6 +46,20 @@ COMMANDS
 >*syntax*
 >`SELECT user, host FROM mysql.user;`
 >
+>**Grant all privileges for a user**
+>*syntax*
+>`GRANT ALL PRIVILEGES ON * . * TO 'joe1996'@'localhost';`
+>
+>**Reloads the privileges from the grant tables in the `mysql` system database.**
+>*syntax*
+>`FLUSH PRIVILEGES;`
+>
+>**Create database and display all databases**
+>*syntax*
+>```
+>CREATE DATABASE <DB_NAME>;
+>SHOW DATABASES;
+>```
 
 Helpful Links
 -------------
