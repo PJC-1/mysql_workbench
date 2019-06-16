@@ -38,28 +38,85 @@ COMMANDS
 -------------
 >**Create a user**
 >*syntax*
+>
 >`CREATE USER '<USER_NAME>'@'<HOST>' IDENTIFIED BY '<PASSWORD>'`
+>
 >*example*
+>
 >`CREATE USER 'joe1996'@'localhost' IDENTIFIED BY 'examplePa$$w0rd'`
 >
 >**Display user and host**
 >*syntax*
+>
 >`SELECT user, host FROM mysql.user;`
 >
 >**Grant all privileges for a user**
 >*syntax*
+>
 >`GRANT ALL PRIVILEGES ON * . * TO 'joe1996'@'localhost';`
 >
 >**Reloads the privileges from the grant tables in the `mysql` system database.**
 >*syntax*
+>
 >`FLUSH PRIVILEGES;`
 >
 >**Create database and display all databases**
 >*syntax*
+>
 >```
 >CREATE DATABASE <DB_NAME>;
+>
 >SHOW DATABASES;
 >```
+>
+>**Use a specific database**
+>
+>*syntax*
+>
+>```
+>USE <DB_NAME>;
+>```
+>
+>**Display available Tables within a Database**
+>
+>```
+>SHOW TABLES;
+>```
+>
+>**Creating Tables**
+>
+>*syntax*
+>
+>```
+>CREATE TABLE <TABLE_NAME> (
+>    <FIELD_NAME> <FIELD_TYPE>,
+>    PRIMARY KEY(<FIELD_NAME>)
+>);
+>```
+>
+>*example*
+>
+>```
+>CREATE TABLE users(
+>    id INT AUTO_INCREMENT,
+>    first_name VARCHAR(100),
+>    last_name VARCHAR(100),
+>    PRIMARY KEY(id)
+>);
+>```
+>
+>**Remove a Table**
+>
+>*syntax*
+>
+>`DROP TABLE <TABLE_NAME>;`
+>
+>**Delete Database**
+>
+>*syntax*
+>
+>`DROP DATABASE <DATABASE_NAME>;`
+>
 
 Helpful Links
 -------------
