@@ -30,8 +30,16 @@ Notes
 >**MySQL Service** (*on Ubuntu 18.04 LTS*)
 >`systemctl status mysql.service`
 >
->**MySQL Workbench**
+
+MySQL Workbench
+-------------
+>
 >NOTE: *Remember to log out as the mysql user from the terminal before creating a MySQL Workbench connection*.
+>
+>**Set a database**
+>Under *Schemas*, select a *Database*, *right-click*, and *select* the option `Set as Default Schema`.
+>
+>
 >
 
 COMMANDS
@@ -116,6 +124,13 @@ COMMANDS
 >*syntax*
 >
 >`DROP DATABASE <DATABASE_NAME>;`
+>
+>**Create a record**
+>*example (adding a user to the users table)*
+>```
+>INSERT INTO users(first_name, last_name, email, password)
+>values ('John', 'Doe', 'john@gmail.com', 123456);
+>```
 >
 
 Helpful Links
