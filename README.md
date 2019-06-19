@@ -126,10 +126,33 @@ COMMANDS
 >`DROP DATABASE <DATABASE_NAME>;`
 >
 >**Create a record**
+>
 >*example (adding a user to the users table)*
+>
 >```
 >INSERT INTO users(first_name, last_name, email, password)
 >values ('John', 'Doe', 'john@gmail.com', 123456);
+>```
+>
+>**Inserting multiple rows**
+>
+>*example (adding multiple users for the users table)*
+>
+>```
+>INSERT INTO users (first_name, last_name, email, password, location, dept,  is_admin, register_date)
+>	values ('Fred', 'Smith', 'fred@gmail.com', '123456', 'New York', 'design', 0, now()),
+>		('Sara', 'Watson', 'sara@gmail.com', '123456', 'New York', 'design', 0, now()),
+>		('Will', 'Jackson', 'will@yahoo.com', '123456', 'Rhode Island', 'development', 1, now()),
+>		('Paula', 'Johnson', 'paula@yahoo.com', '123456', 'Massachusetts', 'sales', 0, now()),
+>		('Tom', 'Spears', 'tom@yahoo.com', '123456', 'Massachusetts', 'sales', 0, now());
+>```
+>
+>**Return first name and last name where the first name is 'John'**
+>
+>*example*
+>
+>```
+>SELECT first_name, last_name FROM users WHERE first_name = 'John';
 >```
 >
 
