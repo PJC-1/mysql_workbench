@@ -155,6 +155,39 @@ COMMANDS
 >SELECT first_name, last_name FROM users WHERE first_name = 'John';
 >```
 >
+>**Return all columns for users that are located in Oakland and belong to the R&D department**
+>
+>*example*
+>
+>```
+>SELECT * FROM users WHERE location="Oakland" AND dept="R&D";
+>```
+>
+>**Return all users who are admins**
+>
+>*example*
+>
+>```
+>SELECT * FROM users WHERE is_admin > 0;
+>```
+>**NOTE:** *The use of the greater than symbol.*
+>
+>**Delete a user by id**
+>
+>*example*
+>
+>```
+>DELETE FROM users WHERE id=6;
+>```
+>
+>**Update a users email address**
+>
+>*example*
+>
+>```
+>UPDATE users SET email="new.email@gmail" WHERE id=1;
+>```
+>**NOTE:** *It's best practice to always use a `WHERE` clause to avoid updating all users in a table.
 
 Helpful Links
 -------------
