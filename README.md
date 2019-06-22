@@ -172,6 +172,13 @@ COMMANDS
 >```
 >**NOTE:** *The use of the greater than symbol.*
 >
+>**Return all users by Last Name in Ascending Order**
+>
+>*example*
+>```
+>SELECT * FROM users ORDER BY last_name ASC;
+>```  
+>
 >**Delete a user by id**
 >
 >*example*
@@ -188,6 +195,17 @@ COMMANDS
 >UPDATE users SET email="new.email@gmail" WHERE id=1;
 >```
 >**NOTE:** *It's best practice to always use a `WHERE` clause to avoid updating all users in a table.
+>
+>**Add a column to an existing Table**
+>
+>*example adding an Age column to the Users Table*
+>
+>```
+>ALTER TABLE users ADD age VARCHAR(3);
+>```
+>
+>
+>
 
 Helpful Links
 -------------
