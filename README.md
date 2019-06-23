@@ -179,6 +179,51 @@ COMMANDS
 >SELECT * FROM users ORDER BY last_name ASC;
 >```  
 >
+>**Return all users by Age in Descending Order**
+>
+>*example*
+>
+>```
+>SELECT * FROM users ORDER BY age DESC;
+>```
+>
+>**Return a new column containing Firstname and Lastname. Also include Department and Age**
+>
+>*example*
+>
+>```
+>SELECT CONCAT(first_name, ' ', last_name) AS 'Name', dept, age FROM users;
+>```
+>**NOTE:** *`CONCAT()`will combine any columns together and return a single new column.*
+>
+>**Return all Cities from the Users Table, only unique values (no duplicates)**
+>
+>*example*
+>
+>```
+>SELECT DISTINCT location FROM users;
+>```
+>
+>**NOTE:** *`DISTINCT` will ensure that only unique values will be returned, with out it you'll receive duplicates in the returned output.*
+>
+>**Return all users that are with the age range of 22 - 24**
+>
+>*example*
+>
+>```
+>SELECT * FROM users WHERE age BETWEEN 22 AND 25;
+>```
+>**NOTE:** *`BETWEEN` can be used to specify a range of values.*
+>
+>**Return all users who belong to a Department that contains the letter `p`**
+>
+>*example*
+>
+>```
+>SELECT first_name FROM users WHERE dept LIKE '%p%';
+>```
+>**NOTE:** *The `%p%` syntax will search for any existance of the letter `p` in the Department column, i.e. returning Departments such as Su**pp**ort* or **P**roduct.
+>
 >**Delete a user by id**
 >
 >*example*
