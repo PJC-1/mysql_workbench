@@ -224,6 +224,15 @@ COMMANDS
 >```
 >**NOTE:** *The `%p%` syntax will search for any existance of the letter `p` in the Department column, i.e. returning Departments such as Su**pp**ort* or **P**roduct.
 >
+>**Return all users that belong to the `Product` and `Support` department**
+>
+>*example*
+>```
+>SELECT * FROM users WHERE dept IN('Product', 'Support');
+>```
+>
+>**NOTE:** *The use of the `IN()` clause helps us avoid extensive use of the `AND` clause.*
+>
 >**Delete a user by id**
 >
 >*example*
@@ -249,6 +258,21 @@ COMMANDS
 >ALTER TABLE users ADD age VARCHAR(3);
 >```
 >
+>**Set another column as an index to search by**
+>
+>*example (Setting the location column as an index from the users table)*
+>
+>```
+>CREATE INDEX LIndex on users(location);
+>```
+>
+>**Remove an existing index**
+>
+>*example*
+>
+>```
+>DROP INDEX LIndex on users;
+>```
 >
 >
 
