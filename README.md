@@ -274,6 +274,21 @@ COMMANDS
 >DROP INDEX LIndex on users;
 >```
 >
+>**Create new table with a Foreign Key**
+>
+>*example(Creating a Table of Posts that contains a Foreign Key of `user_id` from the Users Table's `id` property)*
+>
+>```
+>CREATE TABLE posts(
+>    id INT AUTO_INCREMENT,
+>    user_id INT,
+>    title VARCHAR(100),
+>    body TEXT,
+>    publish_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+>    PRIMARY KEY(id),
+>    FOREIGN KEY(user_id) REFERENCES users(id)
+>);
+>```
 >
 
 Helpful Links
