@@ -233,6 +233,21 @@ COMMANDS
 >
 >**NOTE:** *The use of the `IN()` clause helps us avoid extensive use of the `AND` clause.*
 >
+>**Returning values from two tables**
+>*example (Obtaining values from the `users` table and the `posts` table using `INNER JOIN` clause)
+>
+>```
+>SELECT
+>users.first_name,
+>users.last_name,
+>posts.user_id,
+>posts.title
+>FROM users
+>INNER JOIN posts
+>ON users.id = posts.user_id
+>ORDER BY posts.title;
+>```
+>
 >**Delete a user by id**
 >
 >*example*
