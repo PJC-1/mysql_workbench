@@ -305,6 +305,21 @@ COMMANDS
 >);
 >```
 >
+>*example (Create Comments Table with references to the Posts and Users tables)*
+>
+>```
+>CREATE TABLE comments(
+>    id INT AUTO_INCREMENT,
+>    post_id INT,
+>    user_id INT,
+>    body INT,
+>    publish_data DATETIME DEFAULT CURRENT_TIMESTAMP,
+>    PRIMARY KEY(id),
+>    FOREIGN KEY(post_id) REFERENCES posts(id),
+>    FOREIGN KEY(user_id) REFERENCES users(id)
+>);
+>```
+>
 
 Helpful Links
 -------------
